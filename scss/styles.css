@@ -367,8 +367,15 @@ nav ul li.active a {
 
 /*----------- MAIN --------------*/
 main {
-  padding: 0 2%;
+  padding: 0;
   min-height: 10rem; }
+
+main figure.hero {
+  width: 100%;
+  margin: 0; }
+
+main figure.hero img {
+  width: 100%; }
 
 /*----------- FOOTER --------------*/
 footer {
@@ -415,3 +422,5 @@ footer {
   /*----------- MAIN --------------*/
   /*----------- FOOTER --------------*/ }
 /* end of media query */
+
+/*# sourceMappingURL=styles.css.map */
