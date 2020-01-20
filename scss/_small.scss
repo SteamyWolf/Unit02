@@ -16,9 +16,29 @@ body {
 header {
     padding: .5rem 2%;
     background-color: #ddd;
+    display: flex;
+    justify-content: flex-start;
+    height: 100px;
+    align-items: flex-end;
 }
-header h1 {margin: 0;}
-header h2 {margin: 0; font-weight: normal;}
+header h1 {
+    margin: 0;
+}
+header h2 {
+    margin: 0; 
+    font-weight: normal;
+}
+
+header figure {
+    width: 100px;
+    margin: 0;
+}
+
+header figure img {
+    
+}
+
+
 
 /*----------- NAVIGATION --------------*/
 nav {
