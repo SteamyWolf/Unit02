@@ -8,96 +8,101 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- BODY --------------*/
 body {
     font-size: 16px;
-    font-family: Verdana, sans-serif;
+    font-family: $fontFamily;
+    font-weight: $regularWeight;
 }
 
 
 /*----------- HEADER --------------*/
 header {
-    padding: .5rem 2%;
-    background-color: #ddd;
+    padding: .5rem $gutter;
+    background-color: $primaryColor;
     display: flex;
     justify-content: flex-start;
-    height: 100px;
     align-items: flex-end;
-}
-header h1 {
-    margin: 0;
-}
-header h2 {
-    margin: 0; 
-    font-weight: normal;
-}
-
-header figure {
-    width: 100px;
-    margin: 0;
-}
-
-header figure img {
-    
-}
-
+    h1 {
+        margin: 0;
+        font-weight: $heavyWeight;
+    } // end of h1
+    h2 {
+        margin: 0; 
+        font-weight: $regularWeight;
+    } // end of h2
+    figure {
+        width: 100px;
+        margin: 0;
+    }
+} // end of header!
 
 
 /*----------- NAVIGATION --------------*/
 nav {
     background-color: #666;
-}
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-nav ul li {
-    float: left;
-    width: 25%;
-}
-nav ul li a {
-    display: block;
-    background-color: #444;
-    color: #eee;
-    border-left: 1px solid #777;
-    padding: .5rem 0;
-    text-decoration: none;
-    font-size: .9rem;
-    text-align: center;
-}
-nav ul li:first-child a {border-left: none;}
 
-nav ul li a:hover {
-    background-color: #eee;
-    color: #333;
+     ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
 }
-nav ul li.active a {
-    background-color: #000;
-    color: #fff;
+     ul li {
+        float: left;
+        width: 25%;
 }
+     ul li a {
+        display: block;
+        background-color: #444;
+        color: #eee;
+        border-left: 1px solid #777;
+        padding: .5rem 0;
+        text-decoration: none;
+        font-size: .9rem;
+        text-align: center;
+}
+     ul li:first-child a {
+         border-left: none;
+}
+
+     ul li a:hover {
+        background-color: #eee;
+        color: #333;
+}
+     ul li.active a {
+        background-color: #000;
+        color: #fff;
+}
+} // end of nav
 /*----------- MAIN --------------*/
 main {
-    padding: 0;
+    padding: 0 0 0 $gutter;
     min-height: 10rem;
+
+
+    figure.hero {
+        width: 50%;
+        margin: 0 $gutter 0 $gutter;
+        float: right;
 }
 
-main figure.hero {
-    width: 50%;
-    margin: 0 0 0 2%;
-    float: right;
+    figure.hero img {
+        width: 100%;
 }
 
-main figure.hero img {
-    width: 100%;
+    figure.hero figcaption {
+        text-align: center;
+        font-size: .75rem;
 }
 
-main figure.hero figcaption {
-    text-align: center;
-    font-size: .75rem;
+    h1 {
+        color: $primaryColor;
+        font-weight: $heavyWeight;
 }
+
+} // end of main
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #ddd;
-    padding: .5rem 2%;
+    background-color: $primaryColor;
+    padding: .5rem $gutter;
     text-align: center;
 }
 
