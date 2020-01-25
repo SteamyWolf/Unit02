@@ -75,16 +75,18 @@ nav {
 main {
     padding: 0 0 0 $gutter;
     min-height: 10rem;
+    margin-right: $gutter;
 
 
     figure.hero {
-        width: 50%;
-        margin: 0 $gutter 0 $gutter;
-        float: right;
+        width: 100%;
+        margin: 0 0 0 0;
+        float: left;
 }
 
     figure.hero img {
         width: 100%;
+        margin-right: $gutter;
 }
 
     figure.hero figcaption {
