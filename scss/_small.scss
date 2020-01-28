@@ -80,7 +80,7 @@ main {
 
     figure.hero {
         width: 100%;
-        margin: 0 0 0 0;
+        margin: 0 0 1rem 0;
         float: left;
 }
 
@@ -89,17 +89,28 @@ main {
         margin-right: $gutter;
 }
 
-    figure.hero figcaption {
-        text-align: center;
-        font-size: .75rem;
-}
 
     h1 {
         color: $primaryColor;
         font-weight: $heavyWeight;
 }
+}
+main figure.bodyImg {
+    width: 40%;
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
 
-} // end of main
+main figure.bodyImg img {
+    width: 100%;
+}
+
+
+main figure.bodyImg figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+ // end of main
 
 /*----------- FOOTER --------------*/
 footer {
